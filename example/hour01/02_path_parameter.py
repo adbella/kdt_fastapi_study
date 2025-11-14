@@ -9,6 +9,7 @@ def greet_user(name: str) -> dict:
 def greet_endpoint(name: str) ->dict:
     return greet_user(name)
 
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8888)
